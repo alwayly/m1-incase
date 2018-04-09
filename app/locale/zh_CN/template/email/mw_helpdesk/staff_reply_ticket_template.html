@@ -1,0 +1,32 @@
+<!--@subject {{var subject}}@-->
+
+
+<p>你好 <i>{{var customer_name}}</i>,</p>
+
+<p>我们的工作人员针对您的邮件做了回复，请查看如下内容.</p>
+
+<p>工作人员: <i>{{var operator_name}}</i><br>
+-------------------------------<br>
+{{var message}} <br>
+<input type="hidden" name="example" value="{{var order_id}}">
+<input type="hidden" name="example" value="{{var customer_name}}">
+<input type="hidden" name="example" value="{{var subject}}">
+<input type="hidden" name="example" value="{{var store_name}}">
+<input type="hidden" name="example" value="{{var department_name}}">
+<input type="hidden" name="example" value="{{var operator_name}}">
+<input type="hidden" name="example" value="{{var operator_direct_link}}">
+<input type="hidden" name="example" value="{{var customer_direct_link}}">
+<input type="hidden" name="example" value="{{var expired_time}}">
+<input type="hidden" name="example" value="{{var late}}">
+<input type="hidden" name="example" value="{{var staff_name}}">
+<input type="hidden" name="example" value="{{var note}}">
+<input type="hidden" name="example" value="{{var email_ref_id}}">
+<input type="hidden" name="example" value="{{var ticket_id}}">
+------------------------------- </p>
+
+<p>如果您在{{var expired_time}}小时内未回复，这条记录将自动关闭. <br>
+回复或者打开会话记录,您可以简单的回复此邮件. <br>
+如果你希望在任何时候都可以查看和管理你的信息，请登录到你的账户或者点击以下链接: <br>
+<a href="{{var customer_direct_link}}">{{var customer_direct_link}}</a> </p>
+
+<p>本邮件由{{var department_name}}部门发送.</p>
